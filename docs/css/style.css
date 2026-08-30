@@ -1,15 +1,15 @@
 :root {
-  --bg: #fffaf3;
-  --bg-soft: #fff3df;
+  --bg: #eef4fb;
+  --bg-soft: #dfeaf9;
   --card: #ffffff;
-  --text: #2f2a26;
-  --muted: #6d625d;
-  --primary: #f28c28;
-  --primary-deep: #d96d0d;
-  --secondary: #7bbf95;
-  --secondary-deep: #4a8d6d;
-  --line: #f0dfc7;
-  --shadow: 0 18px 40px rgba(78, 56, 34, 0.08);
+  --text: #1b2430;
+  --muted: #5b6b81;
+  --primary: #2563eb;
+  --primary-deep: #1e3a8a;
+  --secondary: #22b8cf;
+  --secondary-deep: #0e7490;
+  --line: #d3e2f5;
+  --shadow: 0 18px 40px rgba(15, 40, 90, 0.1);
 }
 
 * {
@@ -54,16 +54,16 @@ textarea {
 }
 
 .soft-bg {
-  background: linear-gradient(180deg, #fff9f3 0%, #fff3df 100%);
+  background: linear-gradient(180deg, #eef4fb 0%, #dfeaf9 100%);
 }
 
 .site-header {
   position: sticky;
   top: 0;
   z-index: 30;
-  background: rgba(255, 250, 243, 0.9);
+  background: rgba(238, 244, 251, 0.9);
   backdrop-filter: blur(8px);
-  border-bottom: 1px solid rgba(68, 57, 50, 0.06);
+  border-bottom: 1px solid rgba(15, 40, 90, 0.08);
 }
 
 .header-inner {
@@ -82,15 +82,11 @@ textarea {
 
 .brand-mark {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   width: 52px;
   height: 52px;
   border-radius: 16px;
-  background: linear-gradient(135deg, var(--primary), #ffb15a);
-  color: #fff;
-  font-size: 1.1rem;
   box-shadow: var(--shadow);
+  flex-shrink: 0;
 }
 
 .brand-text {
@@ -130,7 +126,7 @@ textarea {
   color: #fff !important;
   border-radius: 999px;
   padding: 0.8rem 1.3rem;
-  box-shadow: 0 12px 28px rgba(242, 140, 40, 0.2);
+  box-shadow: 0 12px 28px rgba(37, 99, 235, 0.22);
 }
 
 .menu-toggle {
@@ -155,8 +151,8 @@ textarea {
 
 .hero {
   padding: 4rem 0 2rem;
-  background: radial-gradient(circle at top left, rgba(242, 140, 40, 0.12), transparent 35%),
-    radial-gradient(circle at bottom right, rgba(123, 191, 149, 0.16), transparent 30%),
+  background: radial-gradient(circle at top left, rgba(37, 99, 235, 0.12), transparent 35%),
+    radial-gradient(circle at bottom right, rgba(34, 184, 207, 0.16), transparent 30%),
     var(--bg);
 }
 
@@ -172,7 +168,7 @@ textarea {
   margin: 0 0 1rem;
   padding: 0.45rem 0.8rem;
   border-radius: 999px;
-  background: rgba(242, 140, 40, 0.12);
+  background: rgba(37, 99, 235, 0.12);
   color: var(--primary-deep);
   font-size: 0.82rem;
   font-weight: 700;
@@ -180,7 +176,7 @@ textarea {
 }
 
 .eyebrow.accent {
-  background: rgba(123, 191, 149, 0.12);
+  background: rgba(34, 184, 207, 0.14);
   color: var(--secondary-deep);
 }
 
@@ -225,9 +221,9 @@ textarea {
 }
 
 .button.primary {
-  background: linear-gradient(135deg, var(--primary), #ffb15a);
+  background: linear-gradient(135deg, var(--primary), #60a5fa);
   color: #fff;
-  box-shadow: 0 18px 30px rgba(242, 140, 40, 0.25);
+  box-shadow: 0 18px 30px rgba(37, 99, 235, 0.28);
 }
 
 .button.secondary {
@@ -268,7 +264,7 @@ textarea {
 
 .panel-card {
   background: rgba(255, 255, 255, 0.8);
-  border: 1px solid rgba(242, 140, 40, 0.14);
+  border: 1px solid rgba(37, 99, 235, 0.16);
   border-radius: 28px;
   box-shadow: var(--shadow);
 }
@@ -282,7 +278,7 @@ textarea {
   margin-bottom: 1rem;
   padding: 0.5rem 0.75rem;
   border-radius: 999px;
-  background: #fff1de;
+  background: #e2edfc;
   color: var(--primary-deep);
   font-size: 0.8rem;
   font-weight: 700;
@@ -313,7 +309,7 @@ textarea {
 
 .panel-small {
   padding: 1.4rem 1.5rem;
-  background: linear-gradient(135deg, #f9efdf, #ffffff);
+  background: linear-gradient(135deg, #e6eefb, #ffffff);
 }
 
 .panel-label {
@@ -387,7 +383,7 @@ textarea {
 }
 
 .checklist-box {
-  background: linear-gradient(145deg, #fffaf3, #fff);
+  background: linear-gradient(145deg, #eef4fb, #fff);
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 2rem 1.5rem;
@@ -421,7 +417,7 @@ textarea {
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: 1.8rem 1.4rem;
-  box-shadow: 0 10px 30px rgba(74, 52, 30, 0.05);
+  box-shadow: 0 10px 30px rgba(15, 40, 90, 0.06);
 }
 
 .icon {
@@ -431,7 +427,7 @@ textarea {
   width: 52px;
   height: 52px;
   border-radius: 14px;
-  background: linear-gradient(135deg, rgba(242, 140, 40, 0.16), rgba(123, 191, 149, 0.12));
+  background: linear-gradient(135deg, rgba(37, 99, 235, 0.16), rgba(34, 184, 207, 0.14));
   color: var(--primary-deep);
   font-weight: 800;
 }
@@ -480,7 +476,7 @@ textarea {
   border: 1px solid var(--line);
   border-radius: 22px;
   padding: 2rem 1.5rem;
-  box-shadow: 0 16px 26px rgba(78, 56, 34, 0.04);
+  box-shadow: 0 16px 26px rgba(15, 40, 90, 0.05);
 }
 
 .step-number {
@@ -489,7 +485,7 @@ textarea {
   font-size: 0.8rem;
   font-weight: 700;
   color: var(--secondary-deep);
-  background: rgba(123, 191, 149, 0.12);
+  background: rgba(34, 184, 207, 0.14);
   padding: 0.4rem 0.7rem;
   border-radius: 999px;
 }
@@ -515,7 +511,7 @@ textarea {
 }
 
 .price-plan.featured {
-  border: 2px solid rgba(242, 140, 40, 0.5);
+  border: 2px solid rgba(37, 99, 235, 0.55);
 }
 
 .plan-name {
@@ -567,7 +563,7 @@ textarea {
 }
 
 .price-note {
-  background: linear-gradient(145deg, #fff4e6, #fff);
+  background: linear-gradient(145deg, #e3edfa, #fff);
   border: 1px solid var(--line);
   border-radius: 24px;
   padding: 2rem;
@@ -608,7 +604,7 @@ textarea {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
-  background: linear-gradient(135deg, #fffaf3, #fff5e6);
+  background: linear-gradient(135deg, #eef4fb, #e3edfa);
   border: 1px solid var(--line);
   border-radius: 28px;
   padding: 2rem;
@@ -638,12 +634,12 @@ textarea {
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  outline: 2px solid rgba(242, 140, 40, 0.2);
+  outline: 2px solid rgba(37, 99, 235, 0.22);
   border-color: var(--primary);
 }
 
 .site-footer {
-  background: #2e261f;
+  background: #0b1a33;
   color: rgba(255, 255, 255, 0.8);
   padding: 2rem 0;
 }
@@ -688,8 +684,8 @@ textarea {
     left: 0;
     right: 0;
     padding: 0 1rem 1rem;
-    background: rgba(255, 250, 243, 0.96);
-    border-bottom: 1px solid rgba(68, 57, 50, 0.06);
+    background: rgba(238, 244, 251, 0.96);
+    border-bottom: 1px solid rgba(15, 40, 90, 0.08);
     display: none;
   }
 
