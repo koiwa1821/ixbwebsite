@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="IXB ロゴ">
+  <defs>
+    <linearGradient id="ixb-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb" />
+      <stop offset="100%" stop-color="#0e3a8a" />
+    </linearGradient>
+    <linearGradient id="ixb-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7dd3fc" />
+      <stop offset="100%" stop-color="#22b8cf" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background: rounded square, cool blue gradient -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="url(#ixb-bg)" />
+
+  <!-- Subtle tech grid glow accents -->
+  <circle cx="420" cy="96" r="130" fill="#ffffff" opacity="0.06" />
+  <circle cx="88" cy="430" r="150" fill="#22b8cf" opacity="0.10" />
+
+  <!-- Monogram: I X B stylized as connected geometric strokes -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <!-- I: vertical bar -->
+    <rect x="96" y="146" width="34" height="220" rx="17" fill="#ffffff" />
+
+    <!-- X: two crossing diagonal bars in accent gradient, representing connection/network -->
+    <path d="M170 146 L262 256 L170 366" stroke="url(#ixb-accent)" stroke-width="34" />
+    <path d="M262 146 L170 256 L262 366" stroke="#ffffff" stroke-width="34" opacity="0.92" />
+
+    <!-- B: bold geometric letterform built from two stacked bumps -->
+    <path
+      d="M300 146 H354 C388 146 410 166 410 196 C410 218 398 232 382 240
+         C402 248 418 264 418 290 C418 322 394 346 358 346 H300 Z
+         M334 178 V222 H352 C370 222 378 212 378 198 C378 184 368 178 352 178 Z
+         M334 254 V314 H356 C378 314 386 302 386 284 C386 264 376 254 354 254 Z"
+      fill="url(#ixb-accent)"
+      fill-rule="evenodd"
+    />
+    <rect x="300" y="146" width="34" height="200" rx="12" fill="#ffffff" />
+  </g>
+</svg>
