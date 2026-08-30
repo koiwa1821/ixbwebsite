@@ -1,4 +1,4 @@
-.code-workspace
+*.code-workspace
 *.zip
 *.gz
 *.tar
