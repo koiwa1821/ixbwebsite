@@ -1,0 +1,71 @@
+// -----------------------------------------------------------------------------
+// IXB カスタムテーマ — Bootstrap 5 のデフォルト変数を上書きしてから読み込む
+// -----------------------------------------------------------------------------
+
+// 1. カラー -------------------------------------------------------------------
+$primary:       #ff6b35; // 温かみのあるオレンジ（安心感・親しみやすさ）
+$secondary:     #123c69; // 深いネイビー（信頼感）
+$success:       #1f9d7c;
+$info:          #2fb8cf;
+$warning:       #ffb648;
+$danger:        #e0483e;
+$light:         #f4f1ea; // 生成り系のオフホワイト（紙の温かみ）
+$dark:          #10192b;
+
+$body-bg:       #faf6ef;
+$body-color:    #22293a;
+
+// リンク
+$link-color:            $primary;
+$link-hover-color:      darken($primary, 10%);
+$link-decoration:       none;
+
+// 2. 角丸・シャドウ -------------------------------------------------------------
+$border-radius:         1rem;
+$border-radius-sm:      0.6rem;
+$border-radius-lg:      1.5rem;
+$border-radius-xl:      2rem;
+$border-radius-pill:    50rem;
+
+$enable-shadows:        true;
+$enable-gradients:      true;
+$box-shadow:            0 1rem 2.5rem rgba(16, 25, 43, 0.08);
+$box-shadow-sm:         0 0.4rem 1rem rgba(16, 25, 43, 0.06);
+$box-shadow-lg:         0 2rem 4rem rgba(16, 25, 43, 0.12);
+
+// 3. タイポグラフィ -------------------------------------------------------------
+$font-family-sans-serif: "Noto Sans JP", "Yu Gothic UI", "Hiragino Sans", sans-serif;
+$font-weight-bold:       800;
+$headings-font-weight:   800;
+$headings-letter-spacing: -0.02em;
+$line-height-base:       1.75;
+
+// 4. コンポーネント個別調整 -----------------------------------------------------
+$btn-font-weight:        700;
+$btn-padding-y:          0.85rem;
+$btn-padding-x:          1.6rem;
+$btn-padding-y-lg:       1.05rem;
+$btn-padding-x-lg:       2rem;
+
+$card-border-width:      0;
+$card-box-shadow:        $box-shadow-sm;
+
+$navbar-padding-y:       1.1rem;
+$navbar-brand-font-size: 1.1rem;
+
+$input-border-radius:   0.85rem;
+$input-padding-y:       0.85rem;
+$input-padding-x:       1rem;
+$input-border-color:    #e3ddcf;
+
+$accordion-border-width: 0;
+$accordion-border-radius: $border-radius-lg;
+$accordion-button-active-bg: rgba($primary, 0.08);
+$accordion-button-active-color: darken($primary, 15%);
+
+$nav-pills-border-radius: $border-radius-pill;
+
+// -----------------------------------------------------------------------------
+// Bootstrap 本体を読み込み
+// -----------------------------------------------------------------------------
+@import "../node_modules/bootstrap/scss/bootstrap";

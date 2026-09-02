@@ -4,19 +4,15 @@ document.addEventListener('DOMContentLoaded', () => {
     year.textContent = new Date().getFullYear();
   }
 
-  const menuToggle = document.querySelector('.menu-toggle');
+  // モバイルメニューはBootstrapのCollapseで開閉するが、リンククリック時は自動で閉じないため補完する
   const mainNav = document.querySelector('.main-nav');
-
-  if (menuToggle && mainNav) {
-    menuToggle.addEventListener('click', () => {
-      const isOpen = mainNav.classList.toggle('is-open');
-      menuToggle.setAttribute('aria-expanded', String(isOpen));
-    });
-
-    mainNav.querySelectorAll('a').forEach((link) => {
+  if (mainNav && window.bootstrap) {
+    const collapse = window.bootstrap.Collapse.getOrCreateInstance(mainNav, { toggle: false });
+    mainNav.querySelectorAll('.nav-link, .nav-button').forEach((link) => {
       link.addEventListener('click', () => {
-        mainNav.classList.remove('is-open');
-        menuToggle.setAttribute('aria-expanded', 'false');
+        if (mainNav.classList.contains('show')) {
+          collapse.hide();
+        }
       });
     });
   }
